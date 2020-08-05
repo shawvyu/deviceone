@@ -34,6 +34,10 @@ import { DoBaiduNavigate } from "./sm/do_BaiduNavigate";
 import { DoCacheManager } from "./sm/do_CacheManager";
 import { DoFingerPrintRecognition } from "./sm/do_FingerPrintRecognition";
 import { DoGyroSensor } from "./sm/do_GyroSensor";
+import { DoiFlyVoice } from "./sm/do_iFlyVoice";
+import { DoJPush } from "./sm/do_JPush";
+import { DoLocalNotification } from "./sm/do_LocalNotification";
+
 
 export function sm(name: "do_App"): DoApp;
 export function sm(name: "do_Page"): DoPage;
@@ -87,5 +91,11 @@ export function sm(name:"do_CacheManager"):DoCacheManager
 export function sm(name:"do_FingerPrintRecognition"):DoFingerPrintRecognition
 /** 绕x/y/z三轴旋转的三个角度取值范围为 ±180，其中角度的正负遵循右手原则，即右手大拇指伸直，其余四指握拳，大拇指指向数轴，手指指向的方向为正，相反为负 */
 export function sm(name:'do_GyroSensor'):DoGyroSensor
+/** 集成科大讯飞提供的讯飞语音组件，支持语音识别和语音合成功能，语音识别主要是把“你说的话”转换成“文本”，语音合成主要是把“文本”读出来 */
+export function sm(name:'do_iFlyVoice'):DoiFlyVoice
+/** 集成极光推送，支持通知和自定义消息(应用在前台时触发)，受极光sdk的影响，Android平台在应用未启动的情况下无法收到推送消息，但发送的消息不会丢失，会在应用启动后送达 */
+export function sm(name:'do_JPush'):DoJPush
+/** 本地消息通知 */
+export function sm(name:'do_LocalNotification'):DoLocalNotification
 export function ui(name: string): object;
 export function mm(name: string): object;
