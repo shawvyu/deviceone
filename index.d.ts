@@ -1,7 +1,7 @@
 /*
  * @Author: shawvyu
  * @Date: 2020-07-29 21:31:39
- * @LastEditTime: 2020-08-04 23:15:49
+ * @LastEditTime: 2020-08-05 22:59:44
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \HaiwellCloudAppe:\work\nodejs\@types\deviceone\index.d.ts
@@ -37,6 +37,14 @@ import { DoGyroSensor } from "./sm/do_GyroSensor";
 import { DoiFlyVoice } from "./sm/do_iFlyVoice";
 import { DoJPush } from "./sm/do_JPush";
 import { DoLocalNotification } from "./sm/do_LocalNotification";
+import { DoQiniu } from "./sm/do_Qiniu";
+import { DoQRCode } from "./sm/do_QRCode";
+import { DoRongCloud } from "./sm/do_RongCloud";
+import { DoSensor } from "./sm/do_Sensor";
+import { DoSinaWeiBo } from "./sm/do_SinaWeiBo";
+import { DoSMSVerificationCode } from "./sm/do_SMSVerificationCode";
+import { DoSocketServer } from "./sm/do_SocketServer";
+
 
 
 export function sm(name: "do_App"): DoApp;
@@ -97,5 +105,19 @@ export function sm(name:'do_iFlyVoice'):DoiFlyVoice
 export function sm(name:'do_JPush'):DoJPush
 /** 本地消息通知 */
 export function sm(name:'do_LocalNotification'):DoLocalNotification
+/** 七牛云自主研发的分布式对象存储服务，提供高可靠、强安全、低成本、可扩展的存储服务，满足各类存储需求 */
+export function sm(name:'do_Qiniu'):DoQiniu
+/** 二维码的生成和识别；其中iOS平台的二维码识别功能系统需要iOS8级以上的系统，设备需要5S及以上产品 */
+export function sm(name:'do_QRCode'):DoQRCode
+/** 融云即时通信 */
+export function sm(name:'do_RongCloud'):DoRongCloud
+/** 用于感应、检测设备周边的信息不同类型的传感器, 检测的信息也不一样，返回手机设备多种传感器的监测值。可监测以下几种传感器：1、加速度传感器；2、罗盘（磁力传感器）；3、转角（设备在空间中的姿势，在3轴的旋转角度，遵循右手原则）；4、陀螺仪；5、距离传感器。Windows平台不支持 */
+export function sm(name:'do_Sensor'):DoSensor
+/** 提供sina微博用户登录和分享相关功能 */
+export function sm(name:'do_SinaWeiBo'):DoSinaWeiBo
+/** 短信验证码组件,给用户手机号码发送验证码并验证 mob */
+export function sm(name:'do_SMSVerificationCode'):DoSMSVerificationCode
+/** 通过Socket建立网络连接，进行通信，TCP协议 */
+export function sm(name:'do_SocketServer'):DoSocketServer
 export function ui(name: string): object;
 export function mm(name: string): object;
