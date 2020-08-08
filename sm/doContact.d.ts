@@ -1,13 +1,13 @@
 /*
  * @Author: your name
  * @Date: 2020-08-01 17:01:23
- * @LastEditTime: 2020-08-01 17:28:16
+ * @LastEditTime: 2020-08-08 12:52:49
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \deviceone\sm\doContact.d.ts
  */
 
-import { SmBasicInstance } from "./smBase";
+import { SmBasicInstance } from "../base/smBase";
 
 interface ContactInfo {
   id: string;

@@ -1,4 +1,4 @@
-import { SmBasicInstance } from "./smBase";
+import { SmBasicInstance } from "../base/smBase";
 import { MessageRes } from "./do_JPush";
 type RepeatMode= 'None'|'Minute'|'Hour'|'Day'|'Week'
 interface AddNotifyParams{

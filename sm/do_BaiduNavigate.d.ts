@@ -6,7 +6,7 @@
  * @Description: In User Settings Edit
  * @FilePath: \deviceone\sm\do_BaiduNavigate.d.ts
  */
-import { SmBasicInstance } from "./smBase";
+import { SmBasicInstance } from "../base/smBase";
 
 /** BD09_MC：百度墨卡托坐标，ios不支持；BD09LL：百度经纬度坐标；GCJ02：国测局坐标，ios不支持；WGS84：GPS坐标 */
 type CoType = "BD09_MC" | "BD09LL" | "GCJ02" | "WGS84";

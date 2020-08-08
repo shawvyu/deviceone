@@ -7,7 +7,7 @@
  * @FilePath: \deviceone\sm\doDevice.d.ts
  */
 
-import { SmBasicInstance } from "./smBase";
+import { SmBasicInstance } from "../base/smBase";
 
 type FlashStatusType = "on" | "off";
 

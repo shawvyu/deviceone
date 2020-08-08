@@ -7,7 +7,7 @@
  * @FilePath: \deviceone\sm\doAlbum.d.ts
  */
 
-import { SmBasicInstance } from "./smBase";
+import { SmBasicInstance } from "../base/smBase";
 
 type AlbumListen = (data: SelectRes | boolean, e?: Error) => void;
 

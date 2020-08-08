@@ -1,12 +1,12 @@
 /*
  * @Author: your name
  * @Date: 2020-07-31 21:36:56
- * @LastEditTime: 2020-08-01 10:09:07
+ * @LastEditTime: 2020-08-08 12:51:43
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \deviceone\sm\doApp.d.ts
  */
-import { SmBasicInstance } from "./smBase";
+import { SmBasicInstance } from "../base/smBase";
 /**
  * @description 动画效果
  */

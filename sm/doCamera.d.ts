@@ -7,7 +7,7 @@
  * @FilePath: \deviceone\sm\doCamera.d.ts
  */
 
-import { SmBasicInstance } from "./smBase";
+import { SmBasicInstance } from "../base/smBase";
 
 interface CaptureParams {
   /**  */

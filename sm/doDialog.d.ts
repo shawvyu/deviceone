@@ -7,7 +7,7 @@
  * @FilePath: \deviceone\sm\doDialog.d.ts
  */
 
-import { SmBasicInstance } from "./smBase";
+import { SmBasicInstance } from "../base/smBase";
 
 interface OpenParams {
   /** 支持source和data目录 */

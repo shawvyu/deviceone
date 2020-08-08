@@ -7,7 +7,7 @@
  * @FilePath: \deviceone\sm\doDataCache.d.ts
  */
 
-import { SmBasicInstance } from "./smBase";
+import { SmBasicInstance } from "../base/smBase";
 
 interface KeyValue {
   key: string;

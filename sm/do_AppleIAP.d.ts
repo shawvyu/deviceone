@@ -1,12 +1,12 @@
 /*
  * @Author: shawvyu
  * @Date: 2020-08-04 21:49:24
- * @LastEditTime: 2020-08-04 21:58:53
+ * @LastEditTime: 2020-08-08 12:52:35
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \deviceone\sm\do_AppleIAP.d.ts
  */
-import { SmBasicInstance } from "./smBase";
+import { SmBasicInstance } from "../base/smBase";
 
 interface PurchaseParams {
   /**

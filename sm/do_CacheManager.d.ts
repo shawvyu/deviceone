@@ -6,7 +6,7 @@
  * @Description: In User Settings Edit
  * @FilePath: \deviceone\sm\do_CacheManager.d.ts
  */
-import { SmBasicInstance } from "./smBase";
+import { SmBasicInstance } from "../base/smBase";
 
 export interface DoCacheManager extends SmBasicInstance {
   /**

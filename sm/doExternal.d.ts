@@ -7,7 +7,7 @@
  * @FilePath: \deviceone\doExternal.d.ts
  */
 
-import { SmBasicInstance } from "./smBase";
+import { SmBasicInstance } from "../base/smBase";
 
 interface MailParams {
   /** 收件人邮箱 */

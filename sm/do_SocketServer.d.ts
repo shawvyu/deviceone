@@ -1,12 +1,12 @@
 /*
  * @Author: your name
  * @Date: 2020-08-05 22:42:47
- * @LastEditTime: 2020-08-05 22:58:12
+ * @LastEditTime: 2020-08-08 12:52:07
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \deviceone\sm\do_SocketServer.d.ts
  */
-import { SmBasicInstance } from "./smBase";
+import { SmBasicInstance } from "../base/smBase";
 
 interface SendParam{
     /** 如果发送的数据是字符串,type指定字符串的编码方式,支持UTF-8,GBK;如果发送的是16进制字符串,type为HEX;如果发送的是文件,type为file */

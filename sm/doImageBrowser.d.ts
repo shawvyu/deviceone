@@ -1,13 +1,13 @@
 /*
  * @Author: your name
  * @Date: 2020-08-02 23:00:03
- * @LastEditTime: 2020-08-02 23:06:11
+ * @LastEditTime: 2020-08-08 12:52:42
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \deviceone\sm\doImageBrowser.d.ts
  */
 
-import { SmBasicInstance } from "./smBase";
+import { SmBasicInstance } from "../base/smBase";
 
 interface ShowData {
   source: string;

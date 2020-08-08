@@ -1,12 +1,12 @@
 /*
  * @Author: your name
  * @Date: 2020-08-05 21:49:40
- * @LastEditTime: 2020-08-05 22:13:38
+ * @LastEditTime: 2020-08-08 12:52:21
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \deviceone\sm\do_RongCloud.d.ts
  */
-import { SmBasicInstance } from "./smBase";
+import { SmBasicInstance } from "../base/smBase";
 
 type MessageType = "text" | "location" | "file" | "image" | "voice";
 interface MessageRes {

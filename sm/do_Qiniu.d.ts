@@ -6,7 +6,7 @@
  * @Description: In User Settings Edit
  * @FilePath: \deviceone\sm\do_Qiniu.d.ts
  */
-import { SmBasicInstance } from "./smBase";
+import { SmBasicInstance } from "../base/smBase";
 
 interface UploadParams {
   /** 支持data://目录文件 */

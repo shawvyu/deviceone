@@ -6,7 +6,7 @@
  * @Description: In User Settings Edit
  * @FilePath: \deviceone\sm\do_QRCode.d.ts
  */
-import { SmBasicInstance } from "./smBase";
+import { SmBasicInstance } from "../base/smBase";
 interface CreateParams {
   text: string;
   /** 生成的二维码图片边长 @default 500 */

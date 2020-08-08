@@ -1,13 +1,13 @@
 /*
- * @Author: your name
+ * @Author: shawvyu
  * @Date: 2020-08-01 09:47:25
- * @LastEditTime: 2020-08-01 10:02:04
+ * @LastEditTime: 2020-08-08 14:28:04
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \deviceone\sm\smBase.d.ts
  */
 
-interface OnParams {
+export interface OnParams {
   /** @description 事件名 */
   name: string;
   /** @description 回调函数function(data,e),第二个参数e.data就是这个值 */

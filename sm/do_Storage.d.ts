@@ -1,4 +1,4 @@
-import { SmBasicInstance } from "./smBase";
+import { SmBasicInstance } from "../base/smBase";
 
 type ReadEncodingType='utf-8'|'gbk'
 interface ReadFileParams{

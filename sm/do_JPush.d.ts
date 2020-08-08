@@ -1,4 +1,4 @@
-import { SmBasicInstance } from "./smBase";
+import { SmBasicInstance } from "../base/smBase";
 
 interface DidLoginRes{
     /**  */

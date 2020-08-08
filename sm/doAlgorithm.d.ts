@@ -1,13 +1,13 @@
 /*
  * @Author: your name
  * @Date: 2020-08-01 10:32:00
- * @LastEditTime: 2020-08-01 11:38:19
+ * @LastEditTime: 2020-08-08 12:51:50
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \deviceone\doAlgrithe.d.ts
  */
 
-import { SmBasicInstance } from "./smBase";
+import { SmBasicInstance } from "../base/smBase";
 
 type Base64Type = "encode" | "decode";
 

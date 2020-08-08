@@ -6,7 +6,7 @@
  * @Description: In User Settings Edit
  * @FilePath: \deviceone\sm\do_FingerPrintRecognition.d.ts
  */
-import { SmBasicInstance } from "./smBase";
+import { SmBasicInstance } from "../base/smBase";
 
 interface RecognizeParams {
   /** 应用程序提供的请求身份验证的原因，显示在向用户呈现的身份验证对话框中。在iOS中会显示在副标题中。该字符串应以用户当前的语言提供，应该简短明了。它不应该包含应用程序名称，因为它出现在身份验证对话框的其他位置。（仅iOS有效） defaultvalu=通过Home键验证已有手机指纹 */

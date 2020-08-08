@@ -1,4 +1,4 @@
-import { SmBasicInstance } from "./smBase";
+import { SmBasicInstance } from "../base/smBase";
 
 interface ShortcutItemParams{
     /** 快捷菜单中Item的唯一标示 */

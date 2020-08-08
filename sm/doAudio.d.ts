@@ -7,7 +7,7 @@
  * @FilePath: \deviceone\sm\doAudio.d.ts
  */
 
-import { SmBasicInstance } from "./smBase";
+import { SmBasicInstance } from "../base/smBase";
 
 type RecordOutType = "mp3" | "amr" | "aac";
 type RecordOutQuality = "high" | "normal" | "low";

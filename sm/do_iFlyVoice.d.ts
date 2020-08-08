@@ -1,4 +1,4 @@
-import { SmBasicInstance } from "./smBase";
+import { SmBasicInstance } from "../base/smBase";
 interface SpeakParams{
     /** 要读出的文本内容 */
     text:string

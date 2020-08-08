@@ -7,7 +7,7 @@
  * @FilePath: \deviceone\sm\doDateTimePicker.d.ts
  */
 
-import { SmBasicInstance } from "./smBase";
+import { SmBasicInstance } from "../base/smBase";
 
 type DateTimePickerType = 0 | 1 | 2 | 3 | 4;
 

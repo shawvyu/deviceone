@@ -7,7 +7,7 @@
  * @FilePath: \deviceone\sm\doGlobal.d.ts
  */
 
-import { SmBasicInstance } from "./smBase";
+import { SmBasicInstance } from "../base/smBase";
 
 type GlobalListen = () => void;
 

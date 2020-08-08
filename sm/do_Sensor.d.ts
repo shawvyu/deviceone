@@ -6,7 +6,7 @@
  * @Description: In User Settings Edit
  * @FilePath: \deviceone\sm\do_Sensor.d.ts
  */
-import { SmBasicInstance } from "./smBase";
+import { SmBasicInstance } from "../base/smBase";
 /** 传感器类型：1、加速度传感器；2、罗盘；3、转角；4、陀螺仪；5、距离传感器 */
 type SensorType = 1 | 2 | 3 | 4 | 5;
 export interface DoSensor extends SmBasicInstance {

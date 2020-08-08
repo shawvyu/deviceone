@@ -1,7 +1,7 @@
 /*
  * @Author: shawvyu
  * @Date: 2020-07-29 21:31:39
- * @LastEditTime: 2020-08-05 22:59:44
+ * @LastEditTime: 2020-08-08 21:56:15
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \HaiwellCloudAppe:\work\nodejs\@types\deviceone\index.d.ts
@@ -44,7 +44,32 @@ import { DoSensor } from "./sm/do_Sensor";
 import { DoSinaWeiBo } from "./sm/do_SinaWeiBo";
 import { DoSMSVerificationCode } from "./sm/do_SMSVerificationCode";
 import { DoSocketServer } from "./sm/do_SocketServer";
+import { DoSysCalendar } from "./sm/do_SysCalendar";
+import { DoTencentQQ } from "./sm/do_TencentQQ";
+import { DoTencentWX } from "./sm/do_TencentWX";
+import { DoTencentCOS } from "./sm/do_TencentCOS";
+import { DoTouchID } from "./sm/do_TouchID";
+import { DoUMengAnalytics } from "./sm/do_UMengAnalytics";
+import { DoUnionpay } from "./sm/do_Unionpay";
+import { DoVideoPlayer } from "./sm/do_VideoPlayer";
+import { DoTencentUGSV } from "./sm/do_TencentUGSV";
+import { DoZoomVideo } from "./sm/do_ZoomVideo";
 
+import { DoAnimation } from "./mm/do_Animation";
+import { DoAnimator } from "./mm/do_Animator";
+import { DoBitmap } from "./mm/do_Bitmap";
+import { DoHashData } from "./mm/do_HashData";
+import { DoHttp } from "./mm/do_Http";
+import { DoListData } from "./mm/do_ListData";
+import { DoListData } from "./mm/do_ListData";
+import { DoSocket } from "./mm/do_Socket";
+import { DoSQLite } from "./mm/do_SQLite";
+import { DoTimer } from "./mm/do_Timer";
+import { DoBluetooth } from "./mm/do_Bluetooth";
+import { DoMultiAudio } from "./mm/do_MultiAudio";
+import { DoUdpSocket } from "./mm/do_UdpSocket";
+import { DoWebSocket } from "./mm/do_WebSocket";
+import { DoAndroidPermission } from "./mm/do_AndroidPermission";
 
 
 export function sm(name: "do_App"): DoApp;
@@ -94,30 +119,80 @@ export function sm(name: "do_BaiduLocation"): DoBaiduLocation;
 注意：使用该组件的时候，需要在IDE的后台模式管理中加入“音频播放”这个设置 */
 export function sm(name: "do_BaiduNavigate"): DoBaiduNavigate;
 /** 管理应用内缓存，windows平台不支持 */
-export function sm(name:"do_CacheManager"):DoCacheManager
+export function sm(name: "do_CacheManager"): DoCacheManager;
 /** 指纹识别组件,iOS为基于系统touchID和密码识别验证,需要iPhone5s设备搭载iOS8以上系统,IOS touchID识别策略(系统原生框架识别策略,不可修改,可以对照支付宝查看。警告！：touchID验证为设备公用功能(设备解锁和所有app)，不要随意故意错误验证，多次错误验证失败后，设备将会被锁，而且锁定时间越来越长，最终可能导致设备永久锁定!!!。): Android系统要求大于6.0. Android是连续验证失败5次之后30秒内不能继续验证. */
-export function sm(name:"do_FingerPrintRecognition"):DoFingerPrintRecognition
+export function sm(name: "do_FingerPrintRecognition"): DoFingerPrintRecognition;
 /** 绕x/y/z三轴旋转的三个角度取值范围为 ±180，其中角度的正负遵循右手原则，即右手大拇指伸直，其余四指握拳，大拇指指向数轴，手指指向的方向为正，相反为负 */
-export function sm(name:'do_GyroSensor'):DoGyroSensor
+export function sm(name: "do_GyroSensor"): DoGyroSensor;
 /** 集成科大讯飞提供的讯飞语音组件，支持语音识别和语音合成功能，语音识别主要是把“你说的话”转换成“文本”，语音合成主要是把“文本”读出来 */
-export function sm(name:'do_iFlyVoice'):DoiFlyVoice
+export function sm(name: "do_iFlyVoice"): DoiFlyVoice;
 /** 集成极光推送，支持通知和自定义消息(应用在前台时触发)，受极光sdk的影响，Android平台在应用未启动的情况下无法收到推送消息，但发送的消息不会丢失，会在应用启动后送达 */
-export function sm(name:'do_JPush'):DoJPush
+export function sm(name: "do_JPush"): DoJPush;
 /** 本地消息通知 */
-export function sm(name:'do_LocalNotification'):DoLocalNotification
+export function sm(name: "do_LocalNotification"): DoLocalNotification;
 /** 七牛云自主研发的分布式对象存储服务，提供高可靠、强安全、低成本、可扩展的存储服务，满足各类存储需求 */
-export function sm(name:'do_Qiniu'):DoQiniu
+export function sm(name: "do_Qiniu"): DoQiniu;
 /** 二维码的生成和识别；其中iOS平台的二维码识别功能系统需要iOS8级以上的系统，设备需要5S及以上产品 */
-export function sm(name:'do_QRCode'):DoQRCode
+export function sm(name: "do_QRCode"): DoQRCode;
 /** 融云即时通信 */
-export function sm(name:'do_RongCloud'):DoRongCloud
+export function sm(name: "do_RongCloud"): DoRongCloud;
 /** 用于感应、检测设备周边的信息不同类型的传感器, 检测的信息也不一样，返回手机设备多种传感器的监测值。可监测以下几种传感器：1、加速度传感器；2、罗盘（磁力传感器）；3、转角（设备在空间中的姿势，在3轴的旋转角度，遵循右手原则）；4、陀螺仪；5、距离传感器。Windows平台不支持 */
-export function sm(name:'do_Sensor'):DoSensor
+export function sm(name: "do_Sensor"): DoSensor;
 /** 提供sina微博用户登录和分享相关功能 */
-export function sm(name:'do_SinaWeiBo'):DoSinaWeiBo
+export function sm(name: "do_SinaWeiBo"): DoSinaWeiBo;
 /** 短信验证码组件,给用户手机号码发送验证码并验证 mob */
-export function sm(name:'do_SMSVerificationCode'):DoSMSVerificationCode
+export function sm(name: "do_SMSVerificationCode"): DoSMSVerificationCode;
 /** 通过Socket建立网络连接，进行通信，TCP协议 */
-export function sm(name:'do_SocketServer'):DoSocketServer
+export function sm(name: "do_SocketServer"): DoSocketServer;
+/** 可以获取系统日历的日程以及添加日程,修改和删除日程 */
+export function sm(name: "do_SysCalendar"): DoSysCalendar;
+
+/** 提供QQ登录和分享相关的功能 */
+export function sm(name: "do_TencentQQ"): DoTencentQQ;
+/** 接入微信开放平台，可使用微信登录、分享和支付功能 */
+export function sm(name: "do_TencentWX"): DoTencentWX;
+/** 腾讯云存储服务（Cloud Object Storage，简称：COS），是腾讯云提供的一种存储海量文件的分布式存储服务，用户可通过网络随时存储和查看数据。腾讯云 COS 使所有用户都能使用具备高扩展性、低成本、可靠和安全的数据存储服务。 */
+export function sm(name: "do_TencentCOS"): DoTencentCOS;
+/** iPhone 5s以后版本的手机特有的指纹识别功能，调用此模块可实现用户指纹输入验证登陆app 。使用本模块需要支持指纹识别的手机和ios8.0以上的操作系统 */
+export function sm(name: "do_TouchID"): DoTouchID;
+/** 友盟统计 */
+export function sm(name: "do_UMengAnalytics"): DoUMengAnalytics;
+/** 接入银联SDK，完成支付功能 */
+export function sm(name: "do_Unionpay"): DoUnionpay;
+/** 支持边下边播，视频播放宽高比例为16:9，自动横屏 */
+export function sm(name: "do_VideoPlayer"): DoVideoPlayer;
+/** 集成腾讯短视频 UGSV的录制服务，需要在官网申请Licence */
+export function sm(name: "do_TencentUGSV"): DoTencentUGSV;
+/** 目前仅有一个加入会议的功能 */
+export function sm(name: "do_ZoomVideo"): DoZoomVideo;
+
+/** 所有UI组件缩放，移动，透明度变化，旋转都支持动画效果。这个类就是用来定义动画所有属性值的集合，作为UI的animate方法的参数 */
+export function mm(name: "do_Animation"): DoAnimation;
+/** 控制UI组件动画的状态变化，每个状态点都支持对应5种属性的变化:x, y, width,height,bgColor；也支持修改透明值alpha，如50表示半透明，若同时用bgColor的后两位和alpha修改了透明值，以alpha为主，若alpha为父容器，则里面的子组件的透明值也随着改变 */
+export function mm(name: "do_Animation"): DoAnimation;
+/** 图片的处理组件，通过加载source对应路径的图片到内存中，不再需要使用该位图资源必须调用MM组件基类方法release()来释放该使用内存，Android平台仅支持jpg和JEPG格式 */
+export function mm(name: "do_Bitmap"): DoBitmap;
+/** HashData作为一个内存数据源，可以给UIModule作为bindData的数据源。可以参考UIModule的bindData方法。它本质上是一个可变key-value键值对,可以增删改查. */
+export function mm(name: "do_HashData"): DoHashData;
+/** 支持http/https请求服务 */
+export function mm(name: "do_Http"): DoHttp;
+/** ListData作为一个内存数据源 ,可以参考ListView的bindItems方法。也可以作为ListView，GridView的Item的数据集。它本质上是一个可变数组,可以增删改查. */
+export function mm(name: "do_ListData"): DoListData;
+/** 通过Socket建立网络连接，进行通信 */
+export function mm(name: "do_Socket"): DoSocket;
+/** 提供SQLite3数据库的访问接口 */
+export function mm(name: "do_SQLite"): DoSQLite;
+/** 定时器，功能是在指定的时间间隔内反复触发指定任务事件，应用于“发送验证码倒计时“等记时相关的场景 */
+export function mm(name: "do_Timer"): DoTimer;
+/** 使用中心蓝牙与外围设备进行数据传输,设备必须支持蓝牙(BLE全称为Bluetooth Low Energy)4.0,注：Android系统必须4.3以上；iOS系统必须8.0以上 */
+export function mm(name: "do_Bluetooth"): DoBluetooth;
+/** 多音频播放，能支持播放mp3、amr（iOS平台不支持）、aac格式的本地和网络音频 */
+export function mm(name: "do_MultiAudio"): DoMultiAudio;
+/** 通过Socket建立网络连接，遵循UDP协议，进行通信 */
+export function mm(name: "do_UdpSocket"): DoUdpSocket;
+/** 通过WebSocket协议与服务器建立网络连接，进行通信 */
+export function mm(name: "do_WebSocket"): DoWebSocket;
+/** android 权限申请组件 */
+export function mm(name: "do_AndroidPermission"): DoAndroidPermission;
+
 export function ui(name: string): object;
-export function mm(name: string): object;

@@ -6,7 +6,7 @@
  * @Description: In User Settings Edit
  * @FilePath: \deviceone\sm\do_SinaWeiBo.d.ts
  */
-import { SmBasicInstance } from "./smBase";
+import { SmBasicInstance } from "../base/smBase";
 /** 0：默认，图文分享；1：网页分享；2：音乐分享；3：视频分享；4：音频分享； */
 type ShareType = 0 | 1 | 2 | 3 | 4;
 interface LoginInfo {

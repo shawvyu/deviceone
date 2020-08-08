@@ -6,7 +6,7 @@
  * @Description: In User Settings Edit
  * @FilePath: \deviceone\sm\do_BaiduLocation.d.ts
  */
-import { SmBasicInstance } from "./smBase";
+import { SmBasicInstance } from "../base/smBase";
 /**
  * 	high:高精度定位模式（会同时使用Wi-Fi和基站和GPS定位，优先返回最高精度的定位结果）；low：低精度（不会使用GPS，只会使用Wi-Fi和基站定位）；middle: 中精度（不需要连接网络，只使用GPS进行定位，这种模式下不支持室内环境的定位）
  */
