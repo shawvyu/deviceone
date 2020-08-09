@@ -1,7 +1,7 @@
 /*
  * @Author: shawvyu
  * @Date: 2020-07-29 21:31:39
- * @LastEditTime: 2020-08-08 21:56:15
+ * @LastEditTime: 2020-08-09 17:09:01
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \HaiwellCloudAppe:\work\nodejs\@types\deviceone\index.d.ts
@@ -71,7 +71,18 @@ import { DoUdpSocket } from "./mm/do_UdpSocket";
 import { DoWebSocket } from "./mm/do_WebSocket";
 import { DoAndroidPermission } from "./mm/do_AndroidPermission";
 
-
+import { DoButton } from "./ui/do_Button";
+import { DoALayout } from "./ui/do_ALayout";
+import { DoBarcodeView } from "./ui/do_BarcodeView";
+import { DoCanvas } from "./ui/do_Canvas";
+import { DoComboBox } from "./ui/do_ComboBox";
+import { DoFragmentView } from "./ui/do_FragmentView";
+import { DoFrameAnimationView } from "./ui/do_FrameAnimationView";
+import { DoGridView } from "./ui/do_GridView";
+import { DoImageBrowserView } from "./ui/do_ImageBrowserView";
+import { DoImageView } from "./ui/do_ImageView";
+import { DoLabel } from "./ui/do_Label";
+/******************************************************************************************************************** */
 export function sm(name: "do_App"): DoApp;
 export function sm(name: "do_Page"): DoPage;
 export function sm(name: "do_Album"): DoAlbum;
@@ -166,6 +177,8 @@ export function sm(name: "do_TencentUGSV"): DoTencentUGSV;
 /** 目前仅有一个加入会议的功能 */
 export function sm(name: "do_ZoomVideo"): DoZoomVideo;
 
+/***************************************************************************************************** **/
+
 /** 所有UI组件缩放，移动，透明度变化，旋转都支持动画效果。这个类就是用来定义动画所有属性值的集合，作为UI的animate方法的参数 */
 export function mm(name: "do_Animation"): DoAnimation;
 /** 控制UI组件动画的状态变化，每个状态点都支持对应5种属性的变化:x, y, width,height,bgColor；也支持修改透明值alpha，如50表示半透明，若同时用bgColor的后两位和alpha修改了透明值，以alpha为主，若alpha为父容器，则里面的子组件的透明值也随着改变 */
@@ -195,4 +208,33 @@ export function mm(name: "do_WebSocket"): DoWebSocket;
 /** android 权限申请组件 */
 export function mm(name: "do_AndroidPermission"): DoAndroidPermission;
 
-export function ui(name: string): object;
+/************************************************************************************************************************* */
+
+/** 按钮控件，支持通常按钮的属性，方法和事件，缺省是透明无边框。下图为设置了背景色、字体颜色、边框、字体风格、字体标示的效果图 */
+export function ui(id: string, name: "do_Button"): DoButton;
+/** 
+ * UI组件，绝对布局(Absolute Layout),通过设置x,y来设置控件的绝对位置。这是AppWork平台提供的一个核心组件也是最重要的组件之一。绝对布局使用很简单，它内部的所有组件的布局都是绝对坐标值，不过这个坐标值是相对ALayout来说的，不是相对整个屏幕。如下图，按钮的x，y坐标都是100，是相对于按钮所在的ALayout的左上角
+ * @link {http://www.appworker.net/awdoc/web/img/20180329/c58d8cc8ca5a49c498e399f13b06bdf6.png}
+ *  */
+export function ui(id: string, name: "do_Alayout"): DoALayout;
+/**
+ * 条码扫描视图，能设置view的基本属性，宽高等，扫描框内有矩形校正区域，扫描时有简单的动画显示，支持一维码、二维码（包括QR码、DM码等），若想在页面已启动时就加载扫描功能，建议将start方法放在do_Page的loaded事件回调中执行。
+ * @link {http://www.appworker.net/awdoc/web/img/20180329/9f3e9b12a49742a5af8ba7db7a9b94c7.png}
+ */
+export function ui(id: string, name: "do_BarcodeView"): DoBarcodeView;
+/** 支持2D图形处理，可以画点，线，多边形，文字，图片。样式的修改必须在定义图形之前才会生效。 */
+export function ui(id: string, name: "do_Canvas"): DoCanvas;
+/** 点击控件会弹出一个选择列表，单击选项即可选中 */
+export function ui(id: string, name: "do_ComboBox"): DoComboBox;
+/** 多页面滑动视图，支持从最左侧或右侧边缘滑出视图，整体侧滑视图带有缩放和渐变效果； */
+export function ui(id: string, name: "do_FragmentView"): DoFragmentView;
+/** 帧动画视图，可以加载gif动图，也可以将多张图片组合设置为动图效果。 */
+export function ui(id: string, name: "do_FrameAnimationView"): DoFrameAnimationView;
+/** GridView是一个二维网格滚动视图，可将数据源中的一条数据显示为表格中的一个cell，若设置为多模版，需要模板的大小相同。 */
+export function ui(id: string, name: "do_GridView"): DoGridView;
+/** 这个组件用于浏览大量网络或本地图片，图片路径可以http://链接或本地data://、source://目录，支持手势缩放原图，多图片支持左右滑动预览 */
+export function ui(id: string, name: "do_ImageBrowserView"): DoImageBrowserView;
+/** 图片控件，可以设置图片背景，也可以设置点击事件作为特殊的按钮使用，当不清楚原图大小时可设置宽高为-1，会显示原始大小的宽高 */
+export function ui(id: string, name: "do_ImageView"): DoImageView;
+/** 文本标签框，用于显示文本文字，设置字体样式、大小、内容对齐 */
+export function ui(id: string, name: "do_Label"): DoLabel;
