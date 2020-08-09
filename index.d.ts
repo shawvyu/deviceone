@@ -1,7 +1,7 @@
 /*
  * @Author: shawvyu
  * @Date: 2020-07-29 21:31:39
- * @LastEditTime: 2020-08-09 17:09:01
+ * @LastEditTime: 2020-08-09 21:30:07
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \HaiwellCloudAppe:\work\nodejs\@types\deviceone\index.d.ts
@@ -82,6 +82,8 @@ import { DoGridView } from "./ui/do_GridView";
 import { DoImageBrowserView } from "./ui/do_ImageBrowserView";
 import { DoImageView } from "./ui/do_ImageView";
 import { DoLabel } from "./ui/do_Label";
+import { DoLinearLayout } from "./ui/do_LinearLayout";
+import { DoListView } from "./ui/do_ListView";
 /******************************************************************************************************************** */
 export function sm(name: "do_App"): DoApp;
 export function sm(name: "do_Page"): DoPage;
@@ -238,3 +240,7 @@ export function ui(id: string, name: "do_ImageBrowserView"): DoImageBrowserView;
 export function ui(id: string, name: "do_ImageView"): DoImageView;
 /** 文本标签框，用于显示文本文字，设置字体样式、大小、内容对齐 */
 export function ui(id: string, name: "do_Label"): DoLabel;
+/** 线性布局，是AppWork提供的最基础的布局组件之一. */
+export function ui(id: string, name: "do_LinearLayout"): DoLinearLayout;
+/** List视图是最常用的UI组件，由很多个Cell组成。它可以通过bind一个ListData来构造视图的数据Model，修改数据来更新视图。android平台不支持在cell中放TextField、TextBox组件。 */
+export function ui(id: string, name: "do_ListView"): DoListView;
