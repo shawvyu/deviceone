@@ -84,6 +84,11 @@ import { DoImageView } from "./ui/do_ImageView";
 import { DoLabel } from "./ui/do_Label";
 import { DoLinearLayout } from "./ui/do_LinearLayout";
 import { DoListView } from "./ui/do_ListView";
+import { DoProgressBar } from "./ui/do_ProgressBar";
+import { DoScrollView } from "./ui/do_ScrollView";
+import { DoSegmentView } from "./ui/do_SegmentView";
+import { DoSlideView } from "./ui/do_SlideView";
+import { DoTencentVodPlayerView } from "./ui/do_TencentVodPlayerView";
 /******************************************************************************************************************** */
 export function sm(name: "do_App"): DoApp;
 export function sm(name: "do_Page"): DoPage;
@@ -244,3 +249,13 @@ export function ui(id: string, name: "do_Label"): DoLabel;
 export function ui(id: string, name: "do_LinearLayout"): DoLinearLayout;
 /** List视图是最常用的UI组件，由很多个Cell组成。它可以通过bind一个ListData来构造视图的数据Model，修改数据来更新视图。android平台不支持在cell中放TextField、TextBox组件。 */
 export function ui(id: string, name: "do_ListView"): DoListView;
+/** 可以设置基于值填充的进度条和显示重复模式的进度条 */
+export function ui(id: string, name: "do_ProgressBar"): DoProgressBar;
+/** 滚动视图，支持上下和左右滚动两种类型，只有滚动视图内的组件宽、高超过滚动视图自身的宽、高时才可以滚动，滚动视图只能包含一个子组件，通常都是一个ALayout或LinearLayout。 */
+export function ui(id: string, name: "do_ScrollView"): DoScrollView;
+/** 分段选择视图，支持手势滑动和点击选中一个index，通常和do_SlideView结合在一起使用，互相联动；当height=-1时，表示自动宽度 */
+export function ui(id: string, name: "do_SegmentView"): DoSegmentView;
+/** 这个UI组件包含多个子视图(UI文件），实现多个子视图之间左右平缓滑动效果，通过设置looping属性支持无限循环滑动，该组件还支持设置多个不同模板视图 */
+export function ui(id: string, name: "do_SlideView"): DoSlideView;
+/** 超级播放器是基于腾讯云点播SDK-TXVodPlayer实现的集视频信息拉取、横竖屏切换、清晰度选择等功能于一体的UI视图组件。帮助您在短时间内，打造一个媲美市面上各种流行视频App的播放体验。视频云SDK不会对播放地址的来源做限制，即您可以用它来播放腾讯云或非腾讯云的播放地址。但视频云SDK中的播放器只支持FLV 、RTMP 和 HLS（m3u8）三种格式的直播地址，以及 MP4、 HLS（m3u8）和 FLV 三种格式的点播地址。！支持 HLS(m3u8) 和 MP4 两种常见的格式(点播和普通网络)的缓存功能。！ */
+export function ui(id: string, name: "do_TencentVodPlayerView"): DoTencentVodPlayerView;

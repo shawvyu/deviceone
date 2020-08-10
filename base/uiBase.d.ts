@@ -279,3 +279,9 @@ export type ScaleType = 'fillxy'|'center'|'fillxory'|'centercrop'
  * temporay：表示每次打开这个imageview都会先读缓存的本地图片，然后再读服务器的网络图片，然后再缓存到本地,然后再更新到imageview
  */
 export type ImageCacheType = 'always'|'never'|'temporay'
+
+/**
+ * 进度条样式
+ * @link {http://www.appworker.net/awdoc/web/img/20180522/fc1a28676c8f4ceaaa7325a7e5e84df8.png}
+ */
+export type ProgressStyle='horizontal'|'large'|'small'|'normal'
