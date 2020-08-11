@@ -93,6 +93,7 @@ import { DoTextBox } from "./ui/do_TextBox";
 import { DoTextField } from "./ui/do_TextField";
 import { DoViewShower } from "./ui/do_ViewShower";
 import { DoWebView } from "./ui/do_WebView";
+import { DoBaiduMapView } from "./ui/do_BaiduMapView";
 /******************************************************************************************************************** */
 export function sm(name: "do_App"): DoApp;
 export function sm(name: "do_Page"): DoPage;
@@ -271,4 +272,6 @@ export function ui(id: string, name: "do_TextField"): DoTextField;
 export function ui(id: string, name: "do_ViewShower"): DoViewShower;
 /** webview */
 export function ui(id: string, name: "do_WebView"): DoWebView;
+/** 集成百度地图，实现基本的地图功能，包括设置中心点，添加标记等 */
+export function ui(id: string, name: "do_BaiduMapView"): DoBaiduMapView;
 

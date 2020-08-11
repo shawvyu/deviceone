@@ -298,3 +298,5 @@ export type ProgressStyle='horizontal'|'large'|'small'|'normal'
  * “DECIMAL” :数字与小数点键盘（仅支持iOS平台）
  */
 export type InputType='ENG'|'ASC'|'PHONENUMBER'|'URL'|'DECIMAL'
+/**  地图类型，支持标准地图standard和卫星地图satellite。 */
+export type MapType='standard'|'satellite'
