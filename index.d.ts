@@ -89,6 +89,10 @@ import { DoScrollView } from "./ui/do_ScrollView";
 import { DoSegmentView } from "./ui/do_SegmentView";
 import { DoSlideView } from "./ui/do_SlideView";
 import { DoTencentVodPlayerView } from "./ui/do_TencentVodPlayerView";
+import { DoTextBox } from "./ui/do_TextBox";
+import { DoTextField } from "./ui/do_TextField";
+import { DoViewShower } from "./ui/do_ViewShower";
+import { DoWebView } from "./ui/do_WebView";
 /******************************************************************************************************************** */
 export function sm(name: "do_App"): DoApp;
 export function sm(name: "do_Page"): DoPage;
@@ -259,3 +263,12 @@ export function ui(id: string, name: "do_SegmentView"): DoSegmentView;
 export function ui(id: string, name: "do_SlideView"): DoSlideView;
 /** 超级播放器是基于腾讯云点播SDK-TXVodPlayer实现的集视频信息拉取、横竖屏切换、清晰度选择等功能于一体的UI视图组件。帮助您在短时间内，打造一个媲美市面上各种流行视频App的播放体验。视频云SDK不会对播放地址的来源做限制，即您可以用它来播放腾讯云或非腾讯云的播放地址。但视频云SDK中的播放器只支持FLV 、RTMP 和 HLS（m3u8）三种格式的直播地址，以及 MP4、 HLS（m3u8）和 FLV 三种格式的点播地址。！支持 HLS(m3u8) 和 MP4 两种常见的格式(点播和普通网络)的缓存功能。！ */
 export function ui(id: string, name: "do_TencentVodPlayerView"): DoTencentVodPlayerView;
+/** 通常只能输入多行数据，当高度设置为-1时，默认会显示一行文字的高度 */
+export function ui(id: string, name: "do_TextBox"): DoTextBox;
+/** 通常只允许输入一行 */
+export function ui(id: string, name: "do_TextField"): DoTextField;
+/** ViewShower是一个包含多个子VIew的UI容器组件，每个子View的大小和容器大小一致，切换每个View可以添加动画效果，并且可以保持每个View的最后显示状态，支持动态的添加或删除。因为每一个子View在内存里都有对应的对象，所以用户不能在这个容器里添加太多子View。通常这个组件用于整个App的主界面，和底部一个BottomBar结合使用，点击底部按钮，切换不同的视图。 */
+export function ui(id: string, name: "do_ViewShower"): DoViewShower;
+/** webview */
+export function ui(id: string, name: "do_WebView"): DoWebView;
+

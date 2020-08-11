@@ -285,3 +285,16 @@ export type ImageCacheType = 'always'|'never'|'temporay'
  * @link {http://www.appworker.net/awdoc/web/img/20180522/fc1a28676c8f4ceaaa7325a7e5e84df8.png}
  */
 export type ProgressStyle='horizontal'|'large'|'small'|'normal'
+
+/**
+ * “ASC” ：支持ASCII的默认键盘
+ * 
+ * “PHONENUMBER” ：标准电话键盘，支持＋＊＃字符
+ * 
+ * “URL” ：URL键盘，支持.com按钮 只支持URL字符
+ * 
+ * “ENG” :英文键盘
+ * 
+ * “DECIMAL” :数字与小数点键盘（仅支持iOS平台）
+ */
+export type InputType='ENG'|'ASC'|'PHONENUMBER'|'URL'|'DECIMAL'
