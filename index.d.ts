@@ -94,6 +94,27 @@ import { DoTextField } from "./ui/do_TextField";
 import { DoViewShower } from "./ui/do_ViewShower";
 import { DoWebView } from "./ui/do_WebView";
 import { DoBaiduMapView } from "./ui/do_BaiduMapView";
+import { DoBaiduPanoramaView } from "./ui/do_BaiduPanoramaView";
+import { DoCheckBox } from "./ui/do_CheckBox";
+import { DoCoverFlowView } from "./ui/do_CoverFlowView";
+import { DoDataTable } from "./ui/do_DataTable";
+import { DoExpandableListView } from "./ui/do_ExpandableListView";
+import { DoGestureView } from "./ui/do_GestureView";
+import { DoIconFont } from "./ui/do_IconFont";
+import { DoImageCropView } from "./ui/do_ImageCropView";
+import { DoImageCropView1 } from "./ui/do_ImageCropView1";
+import { DoIndexListView } from "./ui/do_IndexListView";
+import { DoMarqueeLabel } from "./ui/do_MarqueeLabel";
+import { DoMultiSelectComboBox } from "./ui/do_MultiSelectComboBox";
+import { DoPainterView } from "./ui/do_PainterView";
+import { DoPDFView } from "./ui/do_PDFView";
+import { DoPicker } from "./ui/do_Picker";
+import { DoProgressBar1 } from "./ui/do_ProgressBar1";
+import { DoProgressBar2 } from "./ui/do_ProgressBar2";
+import { DoRichLabel } from "./ui/do_RichLabel";
+import { DoRichLabel1 } from "./ui/do_RichLabel1";
+import { DoSeekBar } from "./ui/do_SeekBar";
+import { DoSlideListView } from "./ui/do_SlideListView";
 /******************************************************************************************************************** */
 export function sm(name: "do_App"): DoApp;
 export function sm(name: "do_Page"): DoPage;
@@ -274,4 +295,46 @@ export function ui(id: string, name: "do_ViewShower"): DoViewShower;
 export function ui(id: string, name: "do_WebView"): DoWebView;
 /** 集成百度地图，实现基本的地图功能，包括设置中心点，添加标记等 */
 export function ui(id: string, name: "do_BaiduMapView"): DoBaiduMapView;
+/** 百度全景图是一种实景地图服务。为用户提供城市、街道和其他环境的360度全景图像，用户可以通过该服务获得如临其境的地图浏览体验。全景地图使用新的地图技术，营造新的产品体验。真正实现“人视角”的地图浏览体验，为用户提供更加真实准确、更富画面细节的地图服务。 */
+export function ui(id: string, name: "do_BaiduPanoramaView"): DoBaiduPanoramaView;
+/**  */
+export function ui(id: string, name: "do_CheckBox"): DoCheckBox;
+/** 画廊视图，这个UI组件包含多个子视图，实现多个子视图之间左右平缓滑动效果；该组件支持设置多个模板视图，要求多个模板大小相同。 */
+export function ui(id: string, name: "do_CoverFlowView"): DoCoverFlowView;
+/** 类似于Excel表格，展示对应的二维数据表，可以支持自定义的样式设置,可支持上下左右滑动查看，也可支持固定列的锁定。当表头列数与数据列数无法匹配时，确定显示列数的顺序为：1.HeaderData、2.HeaderStyle、3.RowData */
+export function ui(id: string, name: "do_DataTable"): DoDataTable;
+/** 一个可分组可展开的List视图 */
+export function ui(id: string, name: "do_ExpandableListView"): DoExpandableListView;
+/** 手势组件，缺省是透明的，windowsPC不支持 */
+export function ui(id: string, name: "do_GestureView"): DoGestureView;
+/** icon */
+export function ui(id: string, name: "do_IconFont"): DoIconFont;
+/** 图片裁剪视图，能设置view的基本属性，宽高等 */
+export function ui(id: string, name: "do_ImageCropView"): DoImageCropView;
+/** 图片裁剪视图，裁剪区域可以拖动和缩放，能设置view的基本属性，宽高等 */
+export function ui(id: string, name: "do_ImageCropView1"): DoImageCropView1;
+/** IndexListView实际上是一个界面右边带索引的ListView，可以绑定一个HashData数据源，按下滑动右边的索引，可以快速定位到该索引下的首条数据，主要应用于通讯录，歌曲播放器等界面 */
+export function ui(id: string, name: "do_IndexListView"): DoIndexListView;
+/**文字能滚动播出的文本标签框 */
+export function ui(id: string, name: "do_MarqueeLabel"): DoMarqueeLabel;
+/** 多选择框列表，支持选一个或多项功能 */
+export function ui(id: string, name: "do_MultiSelectComboBox"): DoMultiSelectComboBox;
+/** 手势滑动时会在view中留下移动痕迹,可以设置移动痕迹的颜色和宽度。 */
+export function ui(id: string, name: "do_PainterView"): DoPainterView;
+/** PDF阅读器 */
+export function ui(id: string, name: "do_PDFView"): DoPDFView;
+/** 可上下滑动选择的单选控件，停留在中间即为选中项 */
+export function ui(id: string, name: "do_Picker"): DoPicker;
+/** 横向一组圆点样式的进度条 */
+export function ui(id: string, name: "do_ProgressBar1"): DoProgressBar1;
+/** 环行进度条，进度条大小为组件最大内接圆，居中显示在组件范围内 */
+export function ui(id: string, name: "do_ProgressBar2"): DoProgressBar2;
+/** 富文本标签框，用于显示HTML标签内容，设置字体大小、高亮、超链接，默认只支持HTML一些基础标签 */
+export function ui(id: string, name: "do_RichLabel"): DoRichLabel;
+/** 富文本签框，设置字体高亮颜色、字体样式 */
+export function ui(id: string, name: "do_RichLabel1"): DoRichLabel1;
+/** 可以拖动的进度条，取值范围为0~100  */
+export function ui(id: string, name: "do_SeekBar"): DoSeekBar;
+/** 与ListView相似，支持cell左右滑动的列表组件，组件不响应左右滑出部分的点击事件，在模板中单独处理，windows平台不支持 */
+export function ui(id: string, name: "do_SlideListView"): DoSlideListView;
 
