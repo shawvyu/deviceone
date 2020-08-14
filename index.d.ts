@@ -115,6 +115,7 @@ import { DoRichLabel } from "./ui/do_RichLabel";
 import { DoRichLabel1 } from "./ui/do_RichLabel1";
 import { DoSeekBar } from "./ui/do_SeekBar";
 import { DoSlideListView } from "./ui/do_SlideListView";
+import { DoSwitchView } from "./ui/do_SwitchView";
 /******************************************************************************************************************** */
 export function sm(name: "do_App"): DoApp;
 export function sm(name: "do_Page"): DoPage;
@@ -337,4 +338,6 @@ export function ui(id: string, name: "do_RichLabel1"): DoRichLabel1;
 export function ui(id: string, name: "do_SeekBar"): DoSeekBar;
 /** 与ListView相似，支持cell左右滑动的列表组件，组件不响应左右滑出部分的点击事件，在模板中单独处理，windows平台不支持 */
 export function ui(id: string, name: "do_SlideListView"): DoSlideListView;
+/** SwitchView 是一个带有开关选择的UI组件，只有（开，关）两种状态，点击或拽动改变状态，该组件的样式是跟随系统，各平台显示效果不完全一样 ，可以应用于是否记住密码场景和一些具有布尔类型的配置页面 */
+export function ui(id: string, name: "do_SwitchView"): DoSwitchView;
 
