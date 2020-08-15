@@ -1,11 +1,7 @@
 {
   "name": "deviceone",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+  "description": "这个库是对Appworker组件的类型注释，这样可以不用一直去翻看文档使用组件",
+  "author": "shawvyu",
+  "license": "MIT"
 }
