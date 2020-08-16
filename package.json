@@ -1,6 +1,6 @@
 {
   "name": "deviceone",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "这个库是对Appworker组件的类型注释，这样可以不用一直去翻看文档使用组件",
   "author": "shawvyu",
   "keywords": ["deviceone","appworker","android","ios","跨平台"],
